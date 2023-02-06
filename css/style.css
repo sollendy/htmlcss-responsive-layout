@@ -1,0 +1,18 @@
+body {
+    font-style: sans-serif;
+}
+
+/* header */
+
+
+header nav {
+    background-color: rgb(0, 132, 253);
+    width: 100%;
+}
+.phone-img img {
+    width: 100%;
+}
+
+.column .columns {
+    background-color: rgb(181, 221, 255);
+}
