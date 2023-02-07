@@ -1,6 +1,10 @@
 body {
-    font-style: sans-serif;
+    font-family: sans-serif;
 }
+
+/* img {
+    width: 100%;
+} */
 
 /* header */
 
@@ -8,11 +12,296 @@ body {
 header nav {
     background-color: rgb(0, 132, 253);
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
 }
-.phone-img img {
-    width: 100%;
+
+header nav .bar-menu {
+    color: white;
 }
+
+header nav div ul {
+    list-style-type: none;
+    display: none;
+}
+
+.colonne {
+    max-width: 100%;
+}
+
+/* .column {
+    width: 90%;
+    margin: 5% auto;
+} */
 
 .column .columns {
     background-color: rgb(181, 221, 255);
+    border-radius: 20px;
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.column .columns:first-child {
+    margin-top: 10%;
+}
+
+.column .columns .phone-text {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1.5rem;
+    /* padding-top: 2rem; */
+    padding-left: 5%;
+}
+
+.phone-img img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.planning {
+    max-width: 100;
+    margin: auto;
+    padding-bottom: 10%;
+    background-color: rgb(151, 146, 228);
+}
+
+.plan-cont {
+    width: 90%;
+    margin: auto;
+}
+
+.plan-1-half {
+    padding-top: 3rem;
+}
+
+.plan-img1 img {
+    width: 100%;
+}
+
+.plan-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 13%;
+    /* align-items: center; */
+}
+
+.plan-card {
+    background-color: white;
+    margin-top: 12%;
+    padding: 10% 5%;
+    border-radius: 25px;
+
+}
+
+.plan-card img {
+    width: 100%;
+}
+
+.plan-card .card-text-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan-card .card-text-plan .freccia-giu {
+    background-color: rgb(151, 146, 228);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .test-cont {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials .test-cont .test-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 15%;
+}
+
+.testimonials .test-cont .test-card {
+    background-color: rgb(151, 146, 228);
+    color: white;
+    border-radius: 15%;
+    margin: 10% 0 0.1% 0;
+    padding: 7% 4% 7% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials .test-cont .test-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.vantaggi {
+    background-color: rgb(151, 146, 228);
+}
+
+.vantaggi .vant-cont {
+    width: 90%;
+    margin: auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color: rgb(151, 146, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vantaggi .vant-cont .vant-card {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.vantaggi .vant-cont .vant-card .vant-cards {
+    background-color: white;
+    padding: 10% 0 9% 7%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-us .about-cont {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about-us .about-cont .about-par {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-us .about-cont .end-about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-us .about-cont .end-about .img-virgolette {
+    position: relative;
+}
+
+.about-us .about-cont .end-about .img-virgolette img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-us .about-cont .end-about .img-virgolette span {
+    position: absolute;
+    color: rgb(151, 146, 228);
+    top: 4px;
+    left: 100px;
+    font-size: 40px;
+}
+
+.about-us .about-cont .end-about .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 15%;
+}
+
+footer .foot-1 {
+    background-color: rgb(151, 146, 228);
+}
+
+footer .foot-1 .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 15%;
+}
+
+footer .foot-1 .title .title-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+footer .foot-1 .title-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+footer .foot-2 {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 13%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 767) {
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column .columns {
+        background-color: rgb(181, 221, 255);
+        border-radius: 20px;
+        width: calc(100% / 5 * 5 - (1rem / 5 * 5));
+        margin: 5% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+
+    .column .columns:first-child {
+        margin-top: 10%;
+        width: 66.6%;
+    }
 }
