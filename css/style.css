@@ -46,6 +46,7 @@ header nav div ul {
     align-items: center;
     gap: 1rem;
     padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .column .columns:first-child {
@@ -159,6 +160,13 @@ header nav div ul {
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.testimonials .test-cont .test-card .test-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .vantaggi {
@@ -283,8 +291,10 @@ footer .foot-2 {
 /* RESPONSIVE */
 
 @media screen and (min-width: 767) {
+
     .column {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
@@ -302,6 +312,17 @@ footer .foot-2 {
 
     .column .columns:first-child {
         margin-top: 10%;
-        width: 66.6%;
+        /* width: 66.6%; */
+    }
+    
+    .testimonials .test-cont .test-card {
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .testimonials .test-cont .test-card .test-text {
+        display: flex;
+        flex-direction: row;
     }
 }
