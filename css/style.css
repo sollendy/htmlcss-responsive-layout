@@ -290,7 +290,7 @@ footer .foot-2 {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 767) {
+@media screen and (min-width: 768) {
 
     .column {
         display: flex;
